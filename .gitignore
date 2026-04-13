@@ -5,7 +5,7 @@ dist
 .DS_Store
 *.log
 
-.vercel
+.vercel/
 .env*.local
 
 .playwright-mcp/

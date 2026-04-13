@@ -8,6 +8,8 @@
 
 A privacy-first, offline-capable Progressive Web App (PWA) for tracking weight, body measurements, strength PRs, and calisthenics skills. Your data stays on your device. No accounts. No cloud. No subscriptions.
 
+**[Live demo →](https://ballast-sigma.vercel.app)**
+
 ---
 
 ## About Studio N.O.P.E.
