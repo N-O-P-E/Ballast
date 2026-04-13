@@ -1,0 +1,339 @@
+:root,
+[data-theme="dark"] {
+  /* ═══════════════════════════════════════
+     FOUNDATIONS
+     ═══════════════════════════════════════ */
+
+  /* Backgrounds */
+  --nope-bg: #000000;
+  --nope-bg-secondary: #0a0a0a;
+  --nope-bg-tertiary: #111111;
+
+  /* Borders */
+  --nope-border: #1a1a1a;
+  --nope-border-hover: #333333;
+
+  /* Text */
+  --nope-text-primary: #ededed;
+  --nope-text-secondary: #888888;
+  --nope-text-tertiary: #666666;
+
+  /* Accent — primary (Indigo) */
+  --nope-accent: #5b6cf7;
+  --nope-accent-5: rgba(91, 108, 247, 0.05);
+  --nope-accent-10: rgba(91, 108, 247, 0.1);
+  --nope-accent-15: rgba(91, 108, 247, 0.15);
+  --nope-accent-25: rgba(91, 108, 247, 0.25);
+  --nope-accent-50: rgba(91, 108, 247, 0.5);
+
+  /* Accent — secondary (Orange) */
+  --nope-accent-secondary: #f97316;
+  --nope-accent-secondary-10: rgba(249, 115, 22, 0.1);
+  --nope-accent-secondary-15: rgba(249, 115, 22, 0.15);
+
+  /* Semantic colors */
+  --nope-accent-blue: #0070f3;
+  --nope-accent-green: #00a67e;
+  --nope-accent-green-10: rgba(0, 166, 126, 0.1);
+  --nope-accent-purple: #7c3aed;
+  --nope-accent-orange: #f5a623;
+  --nope-accent-red: #ee5555;
+  --nope-accent-red-10: rgba(238, 85, 85, 0.1);
+  --nope-accent-red-40: rgba(238, 85, 85, 0.4);
+
+  /* ═══════════════════════════════════════
+     TYPOGRAPHY
+     ═══════════════════════════════════════ */
+
+  --nope-font-sans: "Geist Sans", system-ui, sans-serif;
+  --nope-font-mono: "DM Mono", monospace;
+
+  /* Font sizes — micro scale */
+  --nope-text-micro: 10px;
+  --nope-text-xxs: 11px;
+
+  /* Font sizes */
+  --nope-text-xs: 12px;
+  --nope-text-sm: 13px;
+  --nope-text-base: 14px;
+  --nope-text-lg: 16px;
+  --nope-text-xl: 20px;
+  --nope-text-2xl: 24px;
+
+  /* Font weights */
+  --nope-font-normal: 400;
+  --nope-font-medium: 500;
+  --nope-font-semibold: 600;
+  --nope-font-bold: 700;
+
+  /* Line heights */
+  --nope-leading-tight: 1.25;
+  --nope-leading-normal: 1.5;
+  --nope-leading-relaxed: 1.625;
+
+  /* Tracking */
+  --nope-tracking-tight: -0.02em;
+  --nope-tracking-normal: 0;
+  --nope-tracking-wide: 0.05em;
+
+  /* Headings */
+  --nope-heading-font: var(--nope-font-sans);
+  --nope-heading-weight: var(--nope-font-semibold);
+  --nope-heading-tracking: var(--nope-tracking-tight);
+  --nope-heading-color: var(--nope-text-primary);
+
+  /* Labels (section labels, form labels) */
+  --nope-label-size: var(--nope-text-xs);
+  --nope-label-weight: var(--nope-font-medium);
+  --nope-label-color: var(--nope-text-tertiary);
+  --nope-label-tracking: var(--nope-tracking-wide);
+  --nope-label-transform: uppercase;
+
+  /* ═══════════════════════════════════════
+     SPACING
+     ═══════════════════════════════════════ */
+
+  --nope-space-xs: 4px;
+  --nope-space-sm: 8px;
+  --nope-space-md: 12px;
+  --nope-space-lg: 16px;
+  --nope-space-xl: 24px;
+  --nope-space-2xl: 32px;
+  --nope-space-3xl: 48px;
+
+  /* ═══════════════════════════════════════
+     RADIUS
+     ═══════════════════════════════════════ */
+
+  --nope-radius-sm: 6px;
+  --nope-radius-md: 10px;
+  --nope-radius-lg: 14px;
+  --nope-radius-xl: 20px;
+  --nope-radius-2xl: 24px;
+  --nope-radius-full: 99px;
+
+  /* Icon sizes */
+  --nope-icon-xs: 12px;
+  --nope-icon-sm: 14px;
+  --nope-icon-md: 16px;
+  --nope-icon-lg: 20px;
+  --nope-icon-xl: 24px;
+
+  /* Semantic shadows */
+  --nope-shadow-toggle: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --nope-glow-card-overlay: rgba(91, 108, 247, 0.08);
+  --nope-interactive-hover-lift-translate-y: -1px;
+  --nope-interactive-hover-lift-shadow: 0 4px 12px var(--nope-accent-10);
+
+  /* ═══════════════════════════════════════
+     COMPONENTS — Buttons
+     ═══════════════════════════════════════ */
+
+  /* Primary button */
+  --nope-btn-primary-bg: var(--nope-text-primary);
+  --nope-btn-primary-color: var(--nope-bg);
+  --nope-btn-primary-hover-opacity: 0.9;
+
+  /* Secondary button */
+  --nope-btn-secondary-bg: var(--nope-bg-tertiary);
+  --nope-btn-secondary-color: var(--nope-text-primary);
+  --nope-btn-secondary-border: var(--nope-border);
+
+  /* Ghost button */
+  --nope-btn-ghost-color: var(--nope-text-tertiary);
+  --nope-btn-ghost-hover-color: var(--nope-text-secondary);
+
+  /* Accent button */
+  --nope-btn-accent-bg: var(--nope-accent);
+  --nope-btn-accent-color: #ffffff;
+  --nope-btn-accent-hover-bg: var(--nope-accent);
+  --nope-btn-accent-hover-translate-y: var(--nope-interactive-hover-lift-translate-y);
+  --nope-btn-accent-hover-shadow: var(--nope-interactive-hover-lift-shadow);
+
+  /* Shared button tokens */
+  --nope-btn-height: 36px;
+  --nope-btn-height-sm: 32px;
+  --nope-btn-height-lg: 40px;
+  --nope-btn-padding-x: var(--nope-space-lg);
+  --nope-btn-padding-x-lg: var(--nope-space-xl);
+  --nope-btn-radius: var(--nope-radius-lg);
+  --nope-btn-font-size: var(--nope-text-sm);
+  --nope-btn-font-weight: var(--nope-font-medium);
+
+  /* ═══════════════════════════════════════
+     COMPONENTS — Inputs
+     ═══════════════════════════════════════ */
+
+  --nope-input-height: 32px;
+  --nope-input-bg: var(--nope-bg-secondary);
+  --nope-input-border: var(--nope-border);
+  --nope-input-border-focus: var(--nope-border-hover);
+  --nope-input-border-error: var(--nope-accent-red-40);
+  --nope-input-border-success: rgba(130, 255, 143, 0.4);
+  --nope-input-radius: var(--nope-radius-md);
+  --nope-input-padding-x: var(--nope-space-md);
+  --nope-input-font-size: var(--nope-text-xs);
+  --nope-input-color: var(--nope-text-primary);
+  --nope-input-placeholder: var(--nope-text-tertiary);
+
+  /* ═══════════════════════════════════════
+     COMPONENTS — Cards
+     ═══════════════════════════════════════ */
+
+  --nope-card-bg: var(--nope-bg);
+  --nope-card-border: var(--nope-border);
+  --nope-card-padding: var(--nope-space-lg);
+  /* outer radius = inner element radius + card padding, rounded to 24px */
+  --nope-card-radius: var(--nope-radius-2xl);
+  --nope-card-gap: var(--nope-space-md);
+
+  /* Card — checkbox inset */
+  --nope-card-checkbox-inset: 9px;
+
+  /* Card — selected/active */
+  --nope-card-active-border: var(--nope-accent-50);
+  --nope-card-active-glow: 0 0 24px var(--nope-accent-10), 0 0 48px var(--nope-accent-5);
+  --nope-card-active-inner-glow: radial-gradient(circle at 50% 30%, var(--nope-accent-10) 0%, transparent 70%);
+
+  /* Card — hover */
+  --nope-card-hover-border: var(--nope-accent-25);
+  --nope-card-hover-glow: 0 0 16px var(--nope-accent-5);
+
+  /* Card — dashed (unselected) */
+  --nope-card-dashed-border: var(--nope-border-hover);
+  --nope-card-dashed-style: dashed;
+  --nope-card-dashed-width: 1.5px;
+
+  /* ═══════════════════════════════════════
+     COMPONENTS — Badges
+     ═══════════════════════════════════════ */
+
+  --nope-badge-font-size: 9px;
+  --nope-badge-font-weight: var(--nope-font-semibold);
+  --nope-badge-padding: 1px 6px;
+  --nope-badge-radius: var(--nope-radius-full);
+
+  /* ═══════════════════════════════════════
+     COMPONENTS — Accordion
+     ═══════════════════════════════════════ */
+
+  --nope-accordion-radius: var(--nope-card-radius);
+  --nope-accordion-bg: var(--nope-card-bg);
+  --nope-accordion-border: var(--nope-card-border);
+  --nope-accordion-padding: var(--nope-card-padding);
+  --nope-accordion-num-size: 20px;
+  --nope-accordion-num-bg: var(--nope-border-hover);
+  --nope-accordion-num-color: var(--nope-text-primary);
+  --nope-accordion-num-font-size: 10px;
+  --nope-accordion-hover-bg: var(--nope-bg-secondary);
+
+  /* ═══════════════════════════════════════
+     MOTION — Durations
+     ═══════════════════════════════════════ */
+
+  --nope-duration-fast: 150ms;
+  --nope-duration-normal: 200ms;
+  --nope-duration-slow: 300ms;
+  --nope-duration-slower: 500ms;
+  --nope-duration-slowest: 700ms;
+
+  /* View transition */
+  --nope-view-transition-easing: cubic-bezier(.5, .3, 0, 1);
+  --nope-view-transition-duration: .45s;
+
+  /* ═══════════════════════════════════════
+     MOTION — Easings
+     ═══════════════════════════════════════ */
+
+  /* Sine */
+  --nope-ease-in-sine: cubic-bezier(.47, 0, .745, .715);
+  --nope-ease-out-sine: cubic-bezier(.39, .575, .565, 1);
+  --nope-ease-in-out-sine: cubic-bezier(.445, .05, .55, .95);
+
+  /* Quad */
+  --nope-ease-in-quad: cubic-bezier(.55, .085, .68, .53);
+  --nope-ease-out-quad: cubic-bezier(.25, .46, .45, .94);
+  --nope-ease-in-out-quad: cubic-bezier(.455, .03, .515, .955);
+
+  /* Cubic */
+  --nope-ease-in-cubic: cubic-bezier(.55, .055, .675, .19);
+  --nope-ease-out-cubic: cubic-bezier(.215, .61, .355, 1);
+  --nope-ease-in-out-cubic: cubic-bezier(.645, .045, .355, 1);
+
+  /* Quart */
+  --nope-ease-in-quart: cubic-bezier(.895, .03, .685, .22);
+  --nope-ease-out-quart: cubic-bezier(.165, .84, .44, 1);
+  --nope-ease-in-out-quart: cubic-bezier(.77, 0, .175, 1);
+
+  /* Quint */
+  --nope-ease-in-quint: cubic-bezier(.755, .05, .855, .06);
+  --nope-ease-out-quint: cubic-bezier(.23, 1, .32, 1);
+  --nope-ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
+
+  /* Expo */
+  --nope-ease-in-expo: cubic-bezier(.95, .05, .795, .035);
+  --nope-ease-out-expo: cubic-bezier(.19, 1, .22, 1);
+  --nope-ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+
+  /* Circ */
+  --nope-ease-in-circ: cubic-bezier(.6, .04, .98, .335);
+  --nope-ease-out-circ: cubic-bezier(.075, .82, .165, 1);
+  --nope-ease-in-out-circ: cubic-bezier(.785, .135, .15, .86);
+
+  /* Back */
+  --nope-ease-in-back: cubic-bezier(.6, -.28, .735, .045);
+  --nope-ease-out-back: cubic-bezier(.175, .885, .32, 1.275);
+  --nope-ease-in-out-back: cubic-bezier(.68, -.55, .265, 1.55);
+
+  /* Springs (linear approximations) */
+  --nope-spring-fast-duration: .667s;
+  --nope-spring-fast: linear(0, .01942 1.83%, .07956 4.02%, .47488 13.85%, .56499 16.3%, .63877 18.86%, .69724 21.48%, .74301 24.19%, .77919 27.07%, .80823 30.09%, .8419 36.03%, .86218 42.42%, .87524 50.45%, .88154 63.31%, .88388);
+
+  --nope-spring-common-duration: .667s;
+  --nope-spring-common: linear(0, .00506 1.18%, .02044 2.46%, .04802 4.05%, .42346 14.66%, .50687 17.18%, .57645 19.72%, .63363 22.39%, .68042 25.17%, .71837 28.08%, .78424 34.39%, .83243 41.54%, .86191 49.06%, .88061 58.64%, .88728 68.81%, .88691);
+
+  --nope-spring-bounce-duration: .833s;
+  --nope-spring-bounce: linear(0, .00541 1.29%, .02193 2.68%, .0522 4.48%, .42958 13.22%, .5765 16.94%, .68498 20.47%, .76758 24.08%, .82862 27.76%, .87474 31.62%, .94536 40.38%, .98226 48.02%, .99662 53.89%, 1.00412 60.97%, 1.00444 68.69%, 1.00048);
+
+  --nope-spring-fast-bounce-duration: 1s;
+  --nope-spring-fast-bounce: linear(0, .00683 1.14%, .02773 2.38%, .06597 3.94%, .53009 13.07%, .71248 16.72%, .84557 20.35%, .93498 23.9%, .99709 27.42%, 1.03389 30.89%, 1.0589 34.42%, 1.0674 37.35%, 1.06792 39.59%, 1.05498 44.46%, 1.03024 50.68%, 1.01514 56.83%, 1.00549 63.54%, .99988);
+
+  --nope-spring-slow-bounce-duration: 1.167s;
+  --nope-spring-slow-bounce: linear(0, .00172 .51%, .00692 1.07%, .01597 1.72%, .59725 16.68%, .7498 19.72%, .85898 22.65%, .93252 25.47%, .97752 28.17%, 1.00379 30.88%, 1.01778 33.53%, 1.02172 36.04%, 1.01377 40.63%, .99498 47.08%, .98875 50.89%, .98846 55.65%, .99484 62.48%, .99883 69.77%, .99988);
+
+  /* Elastic */
+  --nope-ease-out-elastic: linear(0, .5737 7.6%, .8382 11.87%, .9463 14.19%, 1.0292 16.54%, 1.0886 18.97%, 1.1258 21.53%, 1.137 22.97%, 1.1424 24.48%, 1.1423 26.1%, 1.1366 27.86%, 1.1165 31.01%, 1.0507 38.62%, 1.0219 42.57%, .9995 46.99%, .9872 51.63%, .9842 58.77%, 1.0011 81.26%, 1);
+
+  /* ═══════════════════════════════════════
+     STATUS DOTS (Central-style)
+     ═══════════════════════════════════════ */
+
+  --nope-dot-green-bg: #82ff8f;
+  --nope-dot-green-shadow: inset 0 -1px 3.5px #014406, inset 0 -1px .75px #0dfc21, inset 0 1px 1.5px #9affac, 0 0 9px #26ff00;
+  --nope-dot-orange-bg: #ffc46e;
+  --nope-dot-orange-shadow: inset 0 -1px 3.5px #6b3a00, inset 0 -1px .75px #fca50d, inset 0 1px 1.5px #ffe0a8, 0 0 9px #ffa200;
+  --nope-dot-red-bg: #ff8282;
+  --nope-dot-red-shadow: inset 0 -1px 3.5px #440101, inset 0 -1px .75px #fc210d, inset 0 1px 1.5px #ffacac, 0 0 9px #ff2600;
+
+  /* ═══════════════════════════════════════
+     ANIMATIONS
+     ═══════════════════════════════════════ */
+
+  --nope-anim-slide-distance: 8px;
+  --nope-anim-blur-amount: 3px;
+  --nope-anim-in-duration: .3s;
+  --nope-anim-in-easing: var(--nope-ease-out-quart);
+  --nope-anim-fade-duration: .4s;
+  --nope-anim-fade-easing: var(--nope-ease-out-quart);
+  --nope-anim-stagger-delay: 40ms;
+
+  /* ═══════════════════════════════════════
+     DOT GRID
+     ═══════════════════════════════════════ */
+
+  --nope-grid-dot-color: rgba(255, 255, 255, 0.18);
+  --nope-grid-dot-highlight: rgba(255, 255, 255, 0.4);
+  --nope-grid-dot-size: 1px;
+  --nope-grid-gap: 16px;
+  --nope-grid-opacity: 0.6;
+}

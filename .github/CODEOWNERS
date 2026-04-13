@@ -1,0 +1,5 @@
+# Code owners for Ballast.
+# Every PR targeting main must be approved by at least one of the users below.
+# See the matching branch ruleset in GitHub → Settings → Rules → Rulesets.
+
+*   @tijsluitse @basfijneman

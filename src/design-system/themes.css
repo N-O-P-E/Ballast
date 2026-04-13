@@ -1,0 +1,13 @@
+[data-theme="light"] {
+  --nope-bg: #ffffff;
+  --nope-bg-secondary: #fafafa;
+  --nope-bg-tertiary: #f5f5f5;
+  --nope-border: #e5e5e5;
+  --nope-border-hover: #cccccc;
+  --nope-text-primary: #171717;
+  --nope-text-secondary: #525252;
+  --nope-text-tertiary: #a3a3a3;
+  --nope-grid-dot-color: rgba(23, 23, 23, 0.2);
+  --nope-grid-dot-highlight: rgba(23, 23, 23, 0.36);
+  --nope-grid-opacity: 0.72;
+}
