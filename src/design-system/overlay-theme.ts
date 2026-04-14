@@ -8,26 +8,7 @@ export interface OverlayTheme {
   drawDefault: string;
 }
 
-export const OVERLAY_THEMES: Record<string, OverlayTheme> = {
-  'ask-phill': {
-    accent: '#D8CCB5',
-    accentLight: 'rgba(216,204,181,0.2)',
-    surface: '#1C1C1C',
-    textPrimary: '#FAF8F7',
-    textSecondary: 'rgba(250,248,247,0.5)',
-    border: 'rgba(255,255,255,0.1)',
-    drawDefault: '#FAF8F7',
-  },
-  strix: {
-    accent: '#FFDB32',
-    accentLight: 'rgba(255,219,50,0.15)',
-    surface: '#222222',
-    textPrimary: '#FFFFFF',
-    textSecondary: 'rgba(255,255,255,0.55)',
-    border: 'rgba(255,255,255,0.1)',
-    drawDefault: '#FFFFFF',
-  },
-};
+export const OVERLAY_THEMES: Record<string, OverlayTheme> = {};
 
 export const DEFAULT_OVERLAY_THEME_DARK: OverlayTheme = {
   accent: '#5B6CF7',

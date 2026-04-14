@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { X, Bell, BellOff, Clock, ChevronLeft, ChevronRight, RotateCcw, Edit2, Check, Download, Upload, Smartphone, AlertCircle, User, Target, Plus, Trash2 } from 'lucide-react';
 import { useNotifications, MealTime } from '../hooks/useNotifications';
 import { UserProfile, Gender, Phase, AppData } from '../types';
+import { AppDataSchema } from '../types/schema';
 import { DEFAULT_PHASES } from '../constants';
 
 interface SettingsDrawerProps {
@@ -234,18 +235,25 @@ export default function SettingsDrawer({ isOpen, onClose, profile, onUpdateProfi
     const file = event.target.files?.[0];
     if (!file) return;
 
+    const MAX_FILE_SIZE = 5 * 1024 * 1024; // 5 MB is more than enough for years of data
+    if (file.size > MAX_FILE_SIZE) {
+      setImportStatus('error');
+      setTimeout(() => setImportStatus('idle'), 3000);
+      event.target.value = '';
+      return;
+    }
+
     const reader = new FileReader();
     reader.onload = (e) => {
       try {
-        const importedData = JSON.parse(e.target?.result as string) as AppData;
-        // Basic validation - check for required fields
-        if (importedData.profile && importedData.streak !== undefined) {
-          onImportData(importedData);
-          setImportStatus('success');
-          setTimeout(() => setImportStatus('idle'), 3000);
-        } else {
+        const raw = JSON.parse(e.target?.result as string);
+        const result = AppDataSchema.safeParse(raw);
+        if (!result.success) {
           throw new Error('Invalid data format');
         }
+        onImportData(result.data as AppData);
+        setImportStatus('success');
+        setTimeout(() => setImportStatus('idle'), 3000);
       } catch {
         setImportStatus('error');
         setTimeout(() => setImportStatus('idle'), 3000);

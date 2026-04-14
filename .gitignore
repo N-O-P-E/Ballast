@@ -6,6 +6,10 @@ dist
 *.log
 
 .vercel/
+
+# Local-only launch docs (not meant for the public repo)
+docs/launch-strategy.md
+docs/launch-drafts.md
 .env*.local
 
 .playwright-mcp/
